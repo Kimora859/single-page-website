@@ -1,0 +1,62 @@
+
+@mixin text{
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@mixin text2{
+  text-align: center;
+  font-family: "Raleway";
+  font-style: normal;
+  line-height: normal;
+}
+
+@mixin flex_between{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@mixin flex_around{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+@mixin flex_center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin flex{
+	display: flex;
+	align-items: center;
+    align-content: center;
+	justify-content: space-between;
+}
+
+@mixin row{
+	display: flex;
+	flex-direction: row;
+}
+
+@mixin column{
+	display: flex;
+	flex-direction: column;
+}
+
+@mixin image{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+@mixin grid($num) {
+	display: grid;
+	grid-template-columns: repeat($num, 1fr);
+}
